@@ -3,9 +3,12 @@ import numpy as np
 import joblib
 import pandas as pd
 import logging
+from flask_cors import CORS
+
 
 # Initialize Flask app
 app = Flask(__name__)
+CORS(app)
 
 # Load the pre-trained model for disease prediction
 disease_model_path = './models/disease_prediction/random_forest.joblib'
