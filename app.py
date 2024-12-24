@@ -19,9 +19,9 @@ time_loaded_model = joblib.load(time_model_path)
 logging.basicConfig(level=logging.DEBUG)
 
 # Route for rendering the HTML form
-@app.route('/')
-def home():
-    return render_template('index.html')
+# @app.route('/')
+# def home():
+#     return render_template('index.html')
 
 # Route for predicting disease and time
 @app.route('/predict_disease_and_time', methods=['POST'])
